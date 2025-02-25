@@ -15,3 +15,40 @@ This API is built using Java with the Spring Boot framework and integrates with 
 
 ## Database configuration
 1. Import
+
+## Endpoints
+### Create events
+### POST/events
+
+- Creates an event in the database, and as a return, a pretty name is generated.
+```
+{
+  "title": "BootCamp React",
+  "location": "Online",
+  "price": 0.0,
+  "startDate": "2025-03-15",
+  "endDate": "2025-03-20",
+  "startTime": "19:00:00",
+  "endTime": "21:00:00"
+}
+```
+## Response
+- As a response, we have a new attribute called prettyname, which we will use to perform queries in the database.
+```
+{
+    "id": 7,
+    "title": "BootCamp React",
+    "prettyName": "bootcamp-react",
+    "location": "Online",
+    "price": 0.0,
+    "startDate": "2025-03-15",
+    "endDate": "2025-03-20",
+    "startTime": "19:00:00",
+    "endTime": "21:00:00"
+}
+```
+
+
+
+
+
